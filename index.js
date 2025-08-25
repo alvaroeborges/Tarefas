@@ -10,7 +10,8 @@ button.addEventListener("click", function (e) {
   if (taskText) {
     addTask(taskText);
     input.value = "";
-    saveTasks(); // Salva a lista atualizada
+    saveTasks();
+    // Salva a lista atualizada
   }
 });
 
@@ -20,11 +21,14 @@ function addTask(taskText, isChecked = false) {
   li.innerHTML = `
     <span>${taskText}</span> <i class="fas fa-check-square"></i><i class="fas fa-trash"></i>
   `;
+
   if (isChecked) {
     li.classList.add("checked");
   }
   list.appendChild(li);
+
 }
+
 
 list.addEventListener("click", function (e) {
   if (e.target.classList.contains("fa-trash")) {
@@ -58,6 +62,8 @@ function loadTasks() {
     tasks.forEach((task) => addTask(task.text, task.checked));
   }
 }
+
+
 
 // Carrega as tarefas assim que a página é aberta
 loadTasks();

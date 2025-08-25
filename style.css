@@ -13,10 +13,10 @@ body{
     background-color:rgb(255, 255, 255);
     border-radius: 10px;
 }
+
 button{  
     box-sizing: border-box;    
-    border-radius: 10px 10px ;
-    border: none;
+    border-radius: 10px 10px ;  
     font-size: 15px;
     font-family: cursive;
     cursor: pointer;        
