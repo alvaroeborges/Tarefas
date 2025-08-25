@@ -10,14 +10,21 @@ body{
     top: 30%;
     box-shadow: 0 4px 8px rgba(0,0,0,.3);
     width: 400px;
-    background-color:yellow;
+    background-color:rgb(255, 255, 255);
     border-radius: 10px;
+}
+button{  
+    box-sizing: border-box;    
+    border-radius: 10px 10px ;
+    border: none;
+    font-size: 15px;
+    font-family: cursive;
+    cursor: pointer;        
 }
 
 .input{
-    width: 100%;
     box-sizing: border-box;
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px 10px ;
     border: none;
     font-size: 20px;
@@ -67,4 +74,9 @@ body{
 
 .list li.checked .fa-check-square{
     color: darkgray;
+}
+
+button:hover {
+  opacity: 0.5;
+  color: violet;
 }

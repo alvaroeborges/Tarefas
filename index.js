@@ -1,8 +1,9 @@
 const form = document.querySelector(".form");
 const input = document.querySelector(".input");
 const list = document.querySelector(".list");
+const button = document.querySelector("button");
 
-form.addEventListener("submit", function (e) {
+button.addEventListener("click", function (e) {
   e.preventDefault();
 
   const task = input.value.trim();
@@ -27,4 +28,5 @@ list.addEventListener("click", function (e) {
     e.target.parentElement.classList.toggle("checked");
   }
 });
+
 
